@@ -1,6 +1,4 @@
-# import requests
 import scrapy
-# from ..items import ScrapyProjectItem
 
 class sanphamSpider(scrapy.Spider):
     name='sanpham'
@@ -8,7 +6,6 @@ class sanphamSpider(scrapy.Spider):
     
     def __init__(self):
         self.alldanhmuc = "ul.colmenu-ul div.parent a"
-        # self.alllink = "div.parent a"
         
     
     def parse(self,response):
